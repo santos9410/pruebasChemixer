@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Agregar Elementos
+    link(href="../../css/bootstrap.css", ,="", rel="stylesheet", media="screen")
+  body
+    nav
+      div
+        div
+          // <img src="img/logo.png" class="img-responsive img-rounded" alt="Responsive image">
+        div
+          h1 Chemixer
+      div
+        ul.nav.nav-tabs
+          li
+            a(href="#") Inicio
+          li.active
+            a(href="#") Elementos
+          li
+            a(href="#") Cerrar Sesi&#243;n
+    section.container
+      div
+        .form-group
+          h2 Administrador
+          img.img-responsive(src="../../img/user.png", alt="Responsive image")
+        form.form-horizontal.col-xs-8(role="form",action="/admin/elementos/AgregarNuevo",method="post")
+          .form-group
+            label.col-sm-2.control-label(for="inputNombreE") Nombre del elemento
+            .col-sm-10
+              input#inputNombreE.form-control(name="nombreElem",type="nombreE", placeholder="")
+          .form-group
+            label.col-sm-2.control-label(for="inputDescripcion") Descripci&#243;n
+            .col-sm-10
+              textarea.form-control(name="descr",rows="3")
+          .form-group
+            label.col-sm-2.control-label(for="inputAgregaImg") Agregar imagen
+            .col-sm-10
+              textarea.form-control(name="imagen",rows="3")
+          .form-group
+            .col-md-6
+              button.btn.btn-primary(type="submit") Cancelar
+            .col-md-6
+              button.btn.btn-primary(type="submit") Aceptar
+    footer
+      div
+        h3 Footer

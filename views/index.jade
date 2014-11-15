@@ -1,0 +1,41 @@
+doctype html5
+html(lang='es')
+head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title CheMixer
+    meta(name='generator', content='Bootply')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    link(href='css/styles.css', rel='stylesheet')
+  body
+    //
+      login modal
+    #loginModal.modal.show(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') Ã
+            h1.text-center Login
+          .modal-body
+            form.form(action="/admin" method="POST").col-md-12.center-block
+              .form-group
+                input.form-control.input-lg(type='text',name='User', placeholder='Email')#user
+              .form-group
+                input.form-control.input-lg(type='password',name='Pass', placeholder='Password')#pass
+              .form-group
+                button(type="submit").btn.btn-primary.btn-lg.btn-block Entrar
+                span.pull-right
+                  a(href='#') Registrar
+                span
+                  a(href='#') Necesitas Ayuda?
+          .modal-footer
+            .col-md-12
+              button.btn(data-dismiss='modal', aria-hidden='true') Cancelar
+
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/code.js')

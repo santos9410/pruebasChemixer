@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Buscar Usuarios
+    link(href="../css/bootstrap.css", ,="", rel="stylesheet", media="screen")
+  body
+    nav
+      div
+        div
+          // <img src="img/logo.png" class="img-responsive img-rounded" alt="Responsive image">
+        div
+          h1 Chemixer
+      div
+        ul.nav.nav-tabs
+          li
+            a(href="#") Inicio
+          li.active
+            a(href="#") Usuarios
+          li
+            a(href="#") Cerrar Sesi&#243;n
+    section.container
+      div
+        .form-group
+          h2 Administrador
+          img.img-responsive(src="../img/user.png", alt="Responsive image")
+        form.navbar-form.navbar-left(role="search" ,action="/admin/Usuarios/buscar" ,method="post")
+          .form-group
+
+            input.form-control(name="nombreU",type="text", placeholder="nombre de usuario",required='')
+          button.btn.btn-default(type="submit")
+            img.img-responsive.img-rounded(src="../img/search.png", alt="Responsive image")
+        .form-group
+          button.btn.btn-primary(type="submit") Eliminar
+          button.btn.btn-primary(type="submit") Bloquear
+    footer
+      div
+        h3 Footer

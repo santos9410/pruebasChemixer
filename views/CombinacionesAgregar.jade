@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Agregar Combinaciones
+    link(href="../../css/bootstrap.css", ,="", rel="stylesheet", media="screen")
+  body
+    nav
+      div
+        div
+          // <img src="img/logo.png" class="img-responsive img-rounded" alt="Responsive image">
+        div
+          h1 Chemixer
+      div
+        ul.nav.nav-tabs
+          li
+            a(href="#") Inicio
+          li.active
+            a(href="#") Combinaciones
+          li
+            a(href="#") Cerrar Sesi&#243;n
+    section.container
+      div
+        .form-group
+          h2 Administrador
+          img.img-responsive(src="../../img/user.png", alt="Responsive image")
+          form.form-horizontal.col-xs-8(role="form",action="/admin/combinaciones/AgregarNuevo",method="post")
+            .form-group
+              label.col-sm-2.control-label(for="comboArray") comb array
+              .col-sm-10
+                input#comboArray.form-control(name="comboArray",type="text", placeholder="combo array")
+            .form-group
+              label.col-sm-2.control-label(for="idElementoRes") id elemento resultante
+              .col-sm-10
+                input#idElementoRes.form-control(name="idElemRes",type="text", placeholder="id elemento resultante")
+              
+            
+            button.btn.btn-primary(type="submit") Agregar
+    footer
+      div
+        h3 Footer

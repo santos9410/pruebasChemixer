@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Administrar
+    link(href="css/bootstrap.css", ,="", rel="stylesheet", media="screen")
+  body
+    nav
+      div
+        div
+        div
+          h1 Chemixer
+      div
+        ul.nav.nav-tabs
+          li.active
+            a(href="#") Inicio
+          li
+            a(href="#") Cerrar Sesi&#243;n
+    section.container
+      .col-xs-8
+        .form-group
+          h2 Administrador
+          img.img-responsive(src="img/user.png", alt="Responsive image")
+        .form-group
+          button.btn.btn-primary(onclick="location.href='/Admin/Elementos'") Administrar elementos
+          button.btn.btn-primary(onclick="location.href='/Admin/Combinaciones'") Administrar Combinaciones
+          button.btn.btn-primary(onclick="location.href='/Admin/Usuarios'") Administrar Usuario
+    footer
+      div
+        h3 Footer

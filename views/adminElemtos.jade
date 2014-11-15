@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Administrar Elementos
+    link(href="/css/bootstrap.css", ,="", rel="stylesheet", media="screen")
+  body
+    nav
+      div
+        div
+          // <img src="img/logo.png" class="img-responsive img-rounded" alt="Responsive image">
+        div
+          h1 Chemixer
+      div
+        ul.nav.nav-tabs
+          li.active
+            a(href="#") Inicio
+          li
+            a(href="#") Administrar
+          li
+            a(href="#") Cerrar Sesi&#243;n
+    section.container
+      .center-block
+        .form-group
+          h2 Administrador
+          img.img-responsive(src="/img/user.png", alt="Responsive image")
+        
+          .form-group.row
+            .form-group.col-md-7
+              button.btn.btn-primary.btn-lg(onclick="location.href='/Admin/Elementos/Agregar'") Agregar
+            .form-group.col-md-7
+              button.btn.btn-primary.btn-lg(onclick="location.href='/Admin/Elementos/Buscar'") Buscar
+    footer
+      div
+        h3 Footer
